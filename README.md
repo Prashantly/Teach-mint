@@ -1,8 +1,53 @@
-# React + Vite
+# User Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project aims to create a simple user directory with several features:
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User List Display:
+
+  - Show a list of user name cards with the total number of posts by each user.
+  - Clicking a card navigates to the user’s profile page.
+
+- User Profile Page
+  - Display user profile with a country clock selector and posts displayed as cards.
+  - Clock functions like a digital clock, showing the time from the selected country.
+  - Includes a Pause/Start button to control the clock's functioning.
+
+## Requirements
+
+- Each user has a unique route to their page.
+- Back button for easy navigation between pages.
+- Responsive design ensuring compatibility with mobile views.
+- User list served via states.
+
+## APIs Used:
+
+- Countries API:
+  `http://worldtimeapi.org/api/timezone`
+- Current Time API:
+  `http://worldtimeapi.org/api/timezone/:area/:location[/:region]`
+- Example usage: `http://worldtimeapi.org/api/timezone/America/Argentina/Salta`
+- users :
+  `https://jsonplaceholder.typicode.com/users`
+- Posts :
+  `https://jsonplaceholder.typicode.com/posts`
+
+## Bonus Feature:
+
+- Popup displaying complete post content on post click, closing when clicked outside.
+
+## Clone the Project:
+
+- git clone <https://github.com/Prashantly/Teach-mint.git>
+- cd <your-project-folder>
+
+## Project Setup:
+
+### Install Dependencies:
+
+`npm install`
+
+### Run the Project:
+
+`npm run dev`
